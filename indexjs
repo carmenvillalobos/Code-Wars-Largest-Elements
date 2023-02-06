@@ -1,0 +1,14 @@
+// Write a program that outputs the top n elements from a list.
+
+// Ex:
+// largest(2, [7,6,5,4,3,2,1])
+// => [6,7]
+
+function largest (n, array) {
+  return array.sort((a,b)=>a-b).slice(array.length-n)
+  }
+
+// Note: 
+// The 3 dots in (...array) is called the spread operator
+// the sort() organizes the array from least to greatest starting with a and then ending with b (aka ascending sort)
+// the slice method cuts the amount of elements in the array. in this case, it cuts out the first elements that result in (array.length - n)
